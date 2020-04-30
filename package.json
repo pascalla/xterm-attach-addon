@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "build": "../../node_modules/.bin/tsc -p src",
-    "postinstall": "cd ../../node_modules/xterm-attach-addon && npm install && npm run build",
+    "postinstall": "npm run build",
     "prepackage": "npm run build",
     "package": "../../node_modules/.bin/webpack",
     "prepublishOnly": "npm run package"
